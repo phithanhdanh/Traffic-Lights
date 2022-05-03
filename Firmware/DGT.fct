@@ -1,0 +1,5 @@
+main DSTACK_USAGE:0 DSTACK_LEVEL:0 FILE:"DGT.c" LINE:45
+printf DSTACK_USAGE:10 DSTACK_LEVEL:10 FILE:"D:\Program Files\cvavr\lib\stdio.lib" LINE:1528
+_print DSTACK_USAGE:20 DSTACK_LEVEL:30 FILE:"D:\Program Files\cvavr\lib\stdio.lib" LINE:533
+strlen DSTACK_USAGE:2 DSTACK_LEVEL:32 FILE:"D:\Program Files\cvavr\lib\string.lib" LINE:1706
+timer1_ovf_isr DSTACK_USAGE:1 DSTACK_LEVEL:33 FILE:"DGT.c" LINE:36

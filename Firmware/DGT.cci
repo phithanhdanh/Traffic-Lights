@@ -1,0 +1,12 @@
+VERSION:3 SOURCE_TIMESTAMP:54A2A4F3
+NODE:I LEVEL:0 LINE:24 "D:\Program Files\cvavr\inc\mega16.h"
+NODE:V LEVEL:0 LINE:27 "TXA -> R4,R5"
+NODE:V LEVEL:0 LINE:27 "TVA -> R6,R7"
+NODE:V LEVEL:0 LINE:27 "TDA -> R8,R9"
+NODE:V LEVEL:0 LINE:28 "T -> R10,R11"
+NODE:V LEVEL:0 LINE:28 "TXV -> R12,R13"
+NODE:V LEVEL:0 LINE:29 "time_count -> RAM:????"
+NODE:I LEVEL:0 LINE:32 "D:\Program Files\cvavr\inc\stdio.h"
+NODE:I LEVEL:0 LINE:33 "D:\Program Files\cvavr\inc\delay.h"
+NODE:F LEVEL:0 LINE:36 "timer1_ovf_isr(void)"
+NODE:F LEVEL:0 LINE:45 "main(void)"
