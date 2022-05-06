@@ -26,7 +26,7 @@ Data Stack size         : 256
 // Declare your global variables here
 int TXA = 20, TVA = 3, TDA = 20;
 int T, TXV;
-int time_count;
+int time_count, time_remain;
 
 // Standard Input/Output functions
 #include <stdio.h>
@@ -168,27 +168,31 @@ while (1)
       if (time_count < T) time_count++; 
       else time_count = 0;
       
-      //gui du lieu ve pc
-      printf("TimeValue: %d \r\n",time_count);
-      
       if (time_count < TXA) 
         {
             PORTC.0 = 1;
             PORTC.1 = 0;
-            PORTC.2 = 0; 
+            PORTC.2 = 0;  
+            time_remain = TXA - time_count;
         }  
       else if (time_count < TXV)
         {
             PORTC.0 = 0;
             PORTC.1 = 1;
-            PORTC.2 = 0;
+            PORTC.2 = 0; 
+            time_remain = TXV - time_count;
         }  
       else
         {
             PORTC.0 = 0;
             PORTC.1 = 0;
-            PORTC.2 = 1; 
+            PORTC.2 = 1;  
+            time_remain = T - time_count;
         }  
-        delay_ms(1000);  
+        
+      //gui du lieu ve pc
+      printf("Data;%d;%d \r\n",PORTC,time_remain);
+      
+      delay_ms(1000);  
       }
 }
